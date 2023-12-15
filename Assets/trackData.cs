@@ -5,6 +5,7 @@ using UnityEngine;
 public class trackData : MonoBehaviour
 {
     public static trackData i;
+    public List<GameObject> pModels;
     public float trackLength = 1500;
     public int checkpoints = 2;
     public List<int> speeds = new List<int>();

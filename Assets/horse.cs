@@ -22,6 +22,9 @@ public class horse : MonoBehaviour
         {
             chosenTrack = Random.Range(0, trackData.i.checkpoints);
         }
+        GameObject chosenModel = Instantiate(trackData.i.pModels[Random.Range(0, trackData.i.pModels.Count)]);
+        chosenModel.transform.position = transform.position + chosenModel.transform.position;
+        chosenModel.transform.SetParent(transform);
     }
 
     void Update()
