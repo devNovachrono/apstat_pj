@@ -280,6 +280,7 @@ MonoBehaviour:
   - {fileID: 987923605}
   - {fileID: 772642705}
   tick: 0
+  point: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,8 +545,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde3ada86ad565742be1963d7b973346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 0
   markers: 
+  pos: 4
+  dieChance: 0
+  willDie: 0
+  chosenTrack: -1
 --- !u!1 &804000054
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,8 +697,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde3ada86ad565742be1963d7b973346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 0
   markers: 
+  pos: 1
+  dieChance: 0
+  willDie: 0
+  chosenTrack: -1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,8 +898,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde3ada86ad565742be1963d7b973346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 0
   markers: 
+  pos: 3
+  dieChance: 0
+  willDie: 0
+  chosenTrack: -1
 --- !u!1 &1140280655
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +916,7 @@ GameObject:
   - component: {fileID: 1140280658}
   - component: {fileID: 1140280657}
   - component: {fileID: 1140280656}
+  - component: {fileID: 1140280660}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -997,6 +1011,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140280660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140280655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ab1e4437cab0d4ea021b480a0ba6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackLength: 1500
+  checkpoints: 10
+  speeds: 0000000000000000000000000000000000000000
+  sortedSpeeds: 
 --- !u!1 &1560330525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,8 +1173,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde3ada86ad565742be1963d7b973346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 0
   markers: 
+  pos: 2
+  dieChance: 0
+  willDie: 0
+  chosenTrack: -1
 --- !u!1 &1839168143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,8 +1325,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde3ada86ad565742be1963d7b973346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 0
   markers: 
+  pos: 0
+  dieChance: 0
+  willDie: 0
+  chosenTrack: -1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
